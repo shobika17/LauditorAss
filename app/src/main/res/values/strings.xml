@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lauditor</string>
+    <string name="underline"><u>Forget Password ?</u></string>
+    <string name="submit">Submit</string> <!-- Provide a valid string value -->
+    <string name="cancel">Cancel</string>
+    <string name="Submit">Submit</string>
+    <string-array name="List">
+        <item> RSB Associates</item>
+        <item> Akhila and Associates-prod test 01</item>
+        <item>Developer</item>
+    </string-array>
+</resources>

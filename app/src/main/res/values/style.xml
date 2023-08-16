@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base application style -->
+    <style name="Base.TextAppearance.Lauditor" parent="TextAppearance.AppCompat">
+        <!-- Customize your text appearance attributes here -->
+    </style>
+
+    <!-- Custom styles can be defined here -->
+</resources>
+

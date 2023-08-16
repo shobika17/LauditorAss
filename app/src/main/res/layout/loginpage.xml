@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B5A9A"
+    android:backgroundTintMode="add"
+    tools:context=".MainActivity">
+
+    <!--cardview for Layout Design-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="59dp"
+        tools:ignore="MissingConstraints">
+
+        <!--Layout for card Design-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="530dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="24dp"
+            app:layout_constraintBottom_toBottomOf="@id/cardview"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/cardview"
+            app:layout_constraintStart_toStartOf="@id/cardview"
+            app:layout_constraintTop_toBottomOf="@id/cardview">
+
+            <!--Logo for Lauditor Design-->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="187dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/topView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/topView" />
+
+            <!--Textview for Layout Design-->
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gillsans"
+                android:text="This email address is associated with multiple firms. Please select a firm to sign-in"
+                android:textAlignment="center"
+                android:textColor="#EF6C00"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!--cardview for Spinner Design-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="291dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Select Firm Name"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+
+                <!--spinner added text-->
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/sp_firm"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="7dp"
+                    android:dropDownSelector="@color/white"
+                    android:entries="@array/List"
+                    android:fontFamily="@font/gillsans"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:text="" />
+            </androidx.cardview.widget.CardView>
+
+            <!--Card view for password field-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="291dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="8dp">
+
+                <!--password field layout-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:tooltipText="password"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/black">
+
+                    <!--password text field-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="5dp"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/gillsans"
+                        android:hint="Password"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="25dp"
+                        android:paddingBottom="25dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--Forget password button-->
+
+            <Button
+                android:id="@+id/forgetpwdd"
+                android:layout_width="168dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="start|center_horizontal"
+                android:gravity="left"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/gillsans"
+                android:text="@string/underline"
+                android:textAllCaps="false"
+                android:minHeight="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+                <!--FLayout for submition field-->
+                <include layout="@layout/layoutbutton"/>
+            </LinearLayout>
+            <!--End of Submitions button layout-->
+        </LinearLayout>
+        <!--End of design-->
+    </androidx.cardview.widget.CardView>
+    <!--End of card design-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--End of layout card design-->

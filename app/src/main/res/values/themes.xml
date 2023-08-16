@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Lauditor" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/gillsans</item>
+
+    <!-- Other customizations can be added here -->
+    </style>
+
+    <style name="Theme.Lauditor" parent="Base.Theme.Lauditor" />
+    <!-- Additional custom themes can be defined here -->
+</resources>
+
